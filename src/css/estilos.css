@@ -110,7 +110,7 @@ p a:hover {
     display: flex; /* Exibição flexível */
     flex-direction: column; /* Direção da flexbox */
     min-height: 100vh; 
-    width: 180px; 
+    width: 155px; 
     justify-content: center; /* Centralizar conteúdo */
     align-items: center; /* Alinhar itens ao centro */
     gap: 10px; /* Espaçamento entre itens */
