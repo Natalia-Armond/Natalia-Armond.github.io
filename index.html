@@ -2,151 +2,205 @@
 <html lang="pt-BR">
 
 <head>
-	<!-- Metadados do documento -->
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natália Armond - Front-End Developer</title>
 
-	<!-- Importação de fontes externas -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
-	<!-- Importação de estilos CSS -->
-	<link rel="stylesheet" href="./src/css/reset.css" />
-	<link rel="stylesheet" href="./src/css/estilos.css" />
-	<link rel="stylesheet" href="./src/css/responsivo.css" />
-
-	<!-- Título da página -->
-	<title>Projeto portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfólio</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="curriculum.html" target="_blank" class="cv-link">📄 Currículo</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<!-- Conteúdo principal da página -->
-	<main>
-		<!-- Seção "Principal" -->
-		<section id="principal">
-			<!-- Seção "Experiências" -->
-			<article class="personagem">
-				<video class="video-Experiencias" autoplay loop muted>;
-					<source src="./src/imagens/video-experiencias.mp4" type="video/mp4">
-				</video>
-				<div class="conteudo">
-					<h2 class="nome-personagem">Experiências</h2>
-					<p class="descricao">Estagiário na CLI Soluções e Confiabilidade, onde estou aplicando meus
-						conhecimentos e habilidades em desenvolvimento de software para contribuir com a equipe e
-						aprender com os melhores profissionais do mercado.
-					</p>
-				</div>
-			</article>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Natália Alice Armond</h1>
+                <p class="hero-subtitle">FRONT-END DEVELOPER</p>
+                <p class="hero-description">Desenvolvendo soluções web inovadoras e interfaces intuitivas que conectam
+                    pessoas e tecnologia</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn-secondary">Contato</a>
+                    <a href="#" onclick="window.print()" class="btn-cv">📄 Baixar PDF</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./src/imagens/eu-home.png" alt="Natália Armond">
+                <div class="neon-circle"></div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Seção "Formação" -->
-			<article class="personagem">
-				<video class="video-Experiencias" autoplay loop muted>;
-					<source src="./src/imagens/video-formacoes.mp4" type="video/mp4">
-				</video>
-				<div class="conteudo">
-					<h2 class="nome-personagem">Formações</h2>
-					<p>
-						Estudante de Análise de Sistema e Desenvolvimento de Software pela faculdade <a
-							href="https://www.cruzeirodosulvirtual.com.br/graduacao/analise-e-desenvolvimento-de-sistemas/?utm_source=google-search-perf&utm_medium=search&utm_campaign=perf_consideracao_regular_cursos-gerais_aquisicao_graduacao_cruzeiro-virtual_nacional_2024-2&utm_content=null_cpc_palavra-chave_null_analise-desenvolvimento-sistemas_cursos-gerais_texto_null_null_null&gad_source=1&gclid=Cj0KCQjwiuC2BhDSARIsALOVfBKzdU0Vb7NhN6Znpn8g2xQF_GuELJpfuMnF2lZrlzzwGKJX2xuBdCYaAu9mEALw_wcB" target="_blank">Cruzeiro
-							do Sul</a>.
-						Aperfeiçoamento e prática no <a href="https://www.instagram.com/p/C9f3XDAguVW/?img_index=1" target="_blank">DevClub</a>, onde estou me preparando para me tornar uma desenvolvedora
-						full-stack. Adquirindo conhecimento extra com a Imersão Dev com Google Gemini com <a
-							href="https://www.instagram.com/p/C_Ifc5oNe-e/" target="_blank">Alura</a>.
-					</p>
-				</div>
-			</article>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou uma profissional apaixonada por tecnologia, 39 anos, casada e mãe de dois meninos. Formada em
+                        Análise e Desenvolvimento de Sistemas, venho construindo minha trajetória com foco em evolução
+                        constante e aprendizado contínuo. Atualmente, estou me especializando como desenvolvedora
+                        full-stack por meio do curso do DevClub, buscando expandir minhas habilidades e atuar de forma
+                        completa em todas as etapas do desenvolvimento de software. Meu objetivo é contribuir com
+                        soluções eficientes, criativas e funcionais, sempre unindo técnica, dedicação e paixão pelo que
+                        faço.</p>
+                    <p>Atuo na CLI Soluções e Confiabilidade como desenvolvedora front-end, posição que assumi após meu
+                        período de estágio na empresa. Nesse percurso, pude aplicar na prática meus conhecimentos em
+                        tecnologia, aprender com profissionais experientes e evoluir continuamente dentro da área. Hoje,
+                        contribuo diretamente para o desenvolvimento de interfaces e soluções funcionais, sempre com
+                        foco em qualidade, inovação e aprimoramento constante.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <span class="skill-icon">💻</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">⚡</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🎨</span>
+                        <span>UI/UX Design</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">📱</span>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Seção "Sobre Mim" -->
-			<article class="personagem selecionado">
-				<video class="video-sobre" autoplay loop muted>;
-					<source src="./src/imagens/video-Sobre_mim.mp4" type="video/mp4">
-				</video>
-				<div class="conteudo">
-					<h1 class="name">Natalia Alice Armond</h1>
-					<h2 class="nome-personagem">Sobre Mim</h2>
-					<p class="descricao">Estou emocionada em compartilhar com você minha jornada profissional e
-						pessoal.
-						Aqui, você encontrará informações sobre minhas habilidades, experiências e objetivos.</p>
-					<p class="descricao">Sou uma profissional motivada e apaixonada por tecnologia, com 38 anos de
-						idade, casada e mãe de dois meninos incríveis. Atualmente, estou cursando Análise de Sistema
-						e
-						Desenvolvimento de Software, com o objetivo de me tornar uma desenvolvedora full-stack.</p>
-				</div>
-			</article>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Portfólio Pessoal</h3>
+                        <p>Site responsivo com design moderno e animações</p>
+                        <a href="https://github.com/Natalia-Armond" class="btn-github">Ver no GitHub</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Projeto DevClub</h3>
+                        <p>Aplicação full-stack desenvolvida durante o curso</p>
+                        <a href="https://github.com/Natalia-Armond" class="btn-github">Ver no GitHub</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Imersão Alura</h3>
+                        <p>Projeto web interativo desenvolvido durante a imersão</p>
+                        <a href="https://github.com/Natalia-Armond" class="btn-github">Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Seção "Objetivos" -->
-			<article class="personagem">
-				<video class="video-sobre" autoplay loop muted>;
-					<source src="./src/imagens/video-objetivo.mp4" type="video/mp4">
-				</video>
-				<div class="conteudo">
-					<h2 class="nome-personagem">Objetivos</h2>
-					<p class="descricao">Desenvolver minhas habilidades em desenvolvimento de software e análise de
-						sistema. Contribuir com a equipe da CLI Soluções e Confiabilidade e
-						aprender com os melhores profissionais do mercado. Me tornar uma
-						desenvolvedora full-stack e trabalhar em projetos desafiadores e
-						inovadores</p>
-				</div>
-			</article>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiência</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Desenvolvedora Front-End - CLI Soluções</h3>
+                        <p>Atualmente desenvolvendo interfaces e soluções funcionais</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Graduação - Cruzeiro do Sul</h3>
+                        <p>Análise e Desenvolvimento de Sistemas</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Estagiária - CLI Soluções</h3>
+                        <p>Desenvolvimento de software e análise de sistemas</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Estudante - DevClub</h3>
+                        <p>Formação Full-Stack com foco em tecnologias modernas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Seção "Projetos" -->
-			<article class="personagem">
-				<video class="video-sobre" autoplay loop muted>;
-					<source src="./src/imagens/video-projetos.mp4" type="video/mp4">
-				</video>
-				<div class="conteudo">
-					<h2 class="nome-personagem">Projetos</h2>
-					<p class="descricao">Confira este e outros projetos no meu</p>
-					<a href="https://github.com/Natalia-Armond" target="_blank">GitHub</a>
-					<br>
-					<p class="descricao">Confira Tambem meu LinkedIn</p>
-					<a href="https://www.linkedin.com/in/nat%C3%A1lia-armond/" target="_blank">LinkedIn
-					</a>
-				</div>
-			</article>
-		</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <input type="text" id="nome" placeholder="Nome" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+                        <button type="button" onclick="enviarWhatsApp()" class="btn-primary">Enviar via WhatsApp</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>armond.developer@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+55 (31) 98499-2870</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Natalia-Armond" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/natalia-armond/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Navegação dos botões-->
-		<nav class="botoes">
-			<ul>
-				<li>
-					<!-- Botão para seção expereiências -->
-					<button class="botao">
-						<img src="./src/imagens/botao-esperiencias.png" alt="Experiências" />
-					</button>
-				</li>
-				<li>
-					<!-- Botão para seção formações -->
-					<button class="botao">
-						<img src="./src/imagens/botao-formacoes.png" alt="Formações" />
-					</button>
-				</li>
-				<li>
-					<!-- Botão para seção sobre mim -->
-					<button class="botao selecionado">
-						<img src="./src/imagens/botao-sobre.png" alt="Sobre mim" />
-					</button>
-				</li>
-				<li>
-					<!-- Botão para seção Objetivos -->
-					<button class="botao">
-						<img src="./src/imagens/botao-objetivos.png" alt="Objetivos" />
-					</button>
-				</li>
-				<li>
-					<!-- Botão para seção Projetos -->
-					<button class="botao">
-						<img src="./src/imagens/botao-projetos.png" alt="Projetos" />
-					</button>
-				</li>
-			</ul>
-		</nav>
-	</main>
-
-	<!-- Inclusão do script JavaScript -->
-	<script src="./src/js/index.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/navigation.js"></script>
+    <script src="src/js/pdf-download.js"></script>
+    <script src="src/js/whatsapp.js"></script>
 </body>
 
 </html>
